@@ -57,12 +57,12 @@ _RESPUESTA_
 **Eliminar un usuario por id**
 *METODO DELETE*
 
-   curl -X DELETE -H "Authorization: Bearer 8KJjab3Bi62V9axfffUQlS9BlQ1qIr" http://127.0.0.1:8000/eliminar/1/
+    curl -X DELETE -H "Authorization: Bearer 8KJjab3Bi62V9axfffUQlS9BlQ1qIr" http://127.0.0.1:8000/eliminar/1/
 
 **Geocodificar base**
 *METODO GET*
 Realizar la solicitud incluyendo el token en el encabezado:
-   curl -X GET -H "Authorization: Bearer 9e8vyabDHDD4JLdLR4S16R77gkxsiI" http://127.0.0.1:8000/geocodificar_base/   
+    curl -X GET -H "Authorization: Bearer 9e8vyabDHDD4JLdLR4S16R77gkxsiI" http://127.0.0.1:8000/geocodificar_base/   
 
 _RESPUESTA_
 
