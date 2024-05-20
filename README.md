@@ -28,7 +28,7 @@ _RESPUESTA_
 *METODO POST*
 Realizar una solicitud de creacion de usuario:
 
-    curl -X POST -H "Authorization: Bearer 9e8vyabDHDD4JLdLR4S16R77gkxsiI" -H "Content-Type: application/json" -d '{"nombre": "Juan", "apellido": "Pérez", "tipo": "comprador", "direccion": "Calle Falsa 123", "ciudad": "Ciudad Ejemplo"}' http://127.0.0.1:8000/crear/
+      curl -X POST -H "Authorization: Bearer 9e8vyabDHDD4JLdLR4S16R77gkxsiI" -H "Content-Type: application/json" -d '{"nombre": "Juan", "apellido": "Pérez", "tipo": "comprador", "direccion": "Calle Falsa 123", "ciudad": "Ciudad Ejemplo"}' http://127.0.0.1:8000/crear/
 
 _RESPUESTA_
 
