@@ -22,7 +22,7 @@ Realizar una solicitud para crear el TOKEN
 
 _RESPUESTA_
 
-{"access_token": "9e8vyabDHDD4JLdLR4S16R77gkxsiI", "expires_in": 36000, "token_type": "Bearer", "scope": "read write", "refresh_token": "WDx1DRWPl5M9ChG6pZdawLbnWbBPm2"}
+   {"access_token": "9e8vyabDHDD4JLdLR4S16R77gkxsiI", "expires_in": 36000, "token_type": "Bearer", "scope": "read write", "refresh_token": "WDx1DRWPl5M9ChG6pZdawLbnWbBPm2"}
 
 **Usar el Token**
 *METODO POST*
@@ -32,7 +32,7 @@ Realizar una solicitud de creacion de usuario:
 
 _RESPUESTA_
 
-{"id":1,"nombre":"Juan","apellido":"Pérez","direccion":"Calle Falsa 123","tipo":"comprador","ciudad":"Ciudad Ejemplo","longitud":0.0,"latitud":0.0,"estado_geo":false,"cargo":null}
+   {"id":1,"nombre":"Juan","apellido":"Pérez","direccion":"Calle Falsa 123","tipo":"comprador","ciudad":"Ciudad Ejemplo","longitud":0.0,"latitud":0.0,"estado_geo":false,"cargo":null}
 
 **Listar Usuarios**
 *METODO GET*
@@ -42,7 +42,7 @@ Realizar la solicitud incluyendo el token de acceso en el encabezado de autoriza
 
 _RESPUESTA_
 
-[{"id":1,"nombre":"Juan","apellido":"Pérez","direccion":"Calle Falsa 123","tipo":"comprador","ciudad":"Ciudad Ejemplo","longitud":0.0,"latitud":0.0,"estado_geo":false,"cargo":null}]
+   [{"id":1,"nombre":"Juan","apellido":"Pérez","direccion":"Calle Falsa 123","tipo":"comprador","ciudad":"Ciudad Ejemplo","longitud":0.0,"latitud":0.0,"estado_geo":false,"cargo":null}]
 
 **Obtener un usuario por id**
 *METODO GET*
@@ -52,19 +52,18 @@ Realizar la solicitud incluyendo el token en el encabezado:
 
 _RESPUESTA_
 
-{"id":1,"nombre":"Juan","apellido":"Pérez","direccion":"Calle Falsa 123","tipo":"comprador","ciudad":"Ciudad Ejemplo","longitud":0.0,"latitud":0.0,"estado_geo":false,"cargo":null}(venv) 
+   {"id":1,"nombre":"Juan","apellido":"Pérez","direccion":"Calle Falsa 123","tipo":"comprador","ciudad":"Ciudad Ejemplo","longitud":0.0,"latitud":0.0,"estado_geo":false,"cargo":null}(venv) 
 
 **Eliminar un usuario por id**
 *METODO DELETE*
 
-curl -X DELETE -H "Authorization: Bearer 8KJjab3Bi62V9axfffUQlS9BlQ1qIr" http://127.0.0.1:8000/eliminar/1/
-(venv) chien@DESKTOP-0QVE6PJ:~/proyecto_1$ curl -X GET -H "Authorization: Bearer 9e8vyabDHDD4JLdLR4S16R77gkxsiI" http://127.0.0.1:8000/lista/
+   curl -X DELETE -H "Authorization: Bearer 8KJjab3Bi62V9axfffUQlS9BlQ1qIr" http://127.0.0.1:8000/eliminar/1/
 
 **Geocodificar base**
 *METODO GET*
 Realizar la solicitud incluyendo el token en el encabezado:
-curl -X GET -H "Authorization: Bearer 9e8vyabDHDD4JLdLR4S16R77gkxsiI" http://127.0.0.1:8000/geocodificar_base/   
+   curl -X GET -H "Authorization: Bearer 9e8vyabDHDD4JLdLR4S16R77gkxsiI" http://127.0.0.1:8000/geocodificar_base/   
 
 _RESPUESTA_
 
-{"status":"Geocodificación completada."}
+   {"status":"Geocodificación completada."}
