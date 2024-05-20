@@ -62,6 +62,7 @@ _RESPUESTA_
 **Geocodificar base**
 *METODO GET*
 Realizar la solicitud incluyendo el token en el encabezado:
+
     curl -X GET -H "Authorization: Bearer 9e8vyabDHDD4JLdLR4S16R77gkxsiI" http://127.0.0.1:8000/geocodificar_base/   
 
 _RESPUESTA_
