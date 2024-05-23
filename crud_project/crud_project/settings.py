@@ -145,4 +145,3 @@ ERROR_MESSAGES = {
     'ERROR_CARGO_COMPRADOR': 'Los compradores no tienen cargo.',
 }
 
-GOOGLE_GEOCODING_API_KEY = 'AIzaSyAgPfQFfqsHTz99m5VNuJgeVbtgcEEPARY'
