@@ -1,5 +1,5 @@
 # Environments
-.env
+crud_project/.env
 .venv
 env/
 venv/
