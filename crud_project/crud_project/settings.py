@@ -9,8 +9,10 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import environ
+import os
 from pathlib import Path
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +22,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-w536!o@h4bfxk6sipjh)&#!dx&o-@ncjtrw0pe(rf83!3!j7$h'
+SECRET_KEY = env('SECRET_KEY')
+GOOGLE_GEOCODING_API_KEY = env('GOOGLE_GEOCODING_API_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DEBUG', default=False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
 
 
 # Application definition
@@ -142,4 +145,4 @@ ERROR_MESSAGES = {
     'ERROR_CARGO_COMPRADOR': 'Los compradores no tienen cargo.',
 }
 
-GOOGLE_GEOCODING_API_KEY = 'AIzaSyD0txU5n7xlPZ3zkEsEjW09yVHmmEVjU4o'
+GOOGLE_GEOCODING_API_KEY = 'AIzaSyAgPfQFfqsHTz99m5VNuJgeVbtgcEEPARY'
